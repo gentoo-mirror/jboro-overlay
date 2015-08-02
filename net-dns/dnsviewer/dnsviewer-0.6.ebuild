@@ -19,38 +19,38 @@ IUSE="qt4 qt5"
 
 RDEPEND="net-libs/libpcap"
 DEPEND="${RDEPEND}
-        qt4? (
-            dev-qt/qtcore:4
-            dev-qt/qtgui:4
-            )
-        qt5? (
-            dev-qt/qtcore:5
-            dev-qt/qtgui:5
-            dev-qt/qtwidgets:5
-            )
+		qt4? (
+			dev-qt/qtcore:4
+			dev-qt/qtgui:4
+		)
+		qt5? (
+			dev-qt/qtcore:5
+			dev-qt/qtgui:5
+			dev-qt/qtwidgets:5
+        )
         x11-misc/xdg-utils"
 
 CMAKE_USE_DIR="${S}/src"
 
 src_configure() {
-        local mycmakeargs=(
-            $(cmake-utils_use_find_package qt5 Qt5Widgets)
-            $(cmake-utils_use_find_package qt5 Qt5Gui)
-            $(cmake-utils_use_find_package qt5 Qt5Core)
-            )
-        cmake-utils_src_configure
+	local mycmakeargs=(
+		$(cmake-utils_use_find_package qt5 Qt5Widgets)
+		$(cmake-utils_use_find_package qt5 Qt5Gui)
+		$(cmake-utils_use_find_package qt5 Qt5Core)
+		)
+		cmake-utils_src_configure
 }
 
 src_compile() {
-        cmake-utils_src_make
+	cmake-utils_src_make
 }
 
 src_install() {
-        cmake-utils_src_install
-        domenu dnsviewer.desktop
+	cmake-utils_src_install
+	domenu dnsviewer.desktop
 }
 
 pkg_postinst() {
-        fcaps cap_net_raw \
-            "${EROOT}"/usr/bin/dnsviewer
+	fcaps cap_net_raw \
+	"${EROOT}"/usr/bin/dnsviewer
 }
