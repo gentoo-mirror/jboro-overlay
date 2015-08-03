@@ -18,7 +18,8 @@ KEYWORDS="~amd64"
 IUSE=""
 
 RDEPEND="media-libs/alsa-lib
-		virtual/opencl"
+		virtual/opencl
+		x11-libs/qwt"
 DEPEND="${RDEPEND}
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5
