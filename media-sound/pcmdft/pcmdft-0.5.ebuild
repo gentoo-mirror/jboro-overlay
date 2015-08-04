@@ -21,9 +21,8 @@ RDEPEND="media-libs/alsa-lib
 		virtual/opencl
 		x11-libs/qwt"
 DEPEND="${RDEPEND}
-		dev-qt/qtcore:5
+		dev-qt/qtcore:4
 		dev-qt/qtgui:5
-		dev-qt/qtwidgets:5
         x11-misc/xdg-utils"
 
 CMAKE_USE_DIR="${S}/src"
