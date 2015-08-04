@@ -19,7 +19,7 @@ IUSE=""
 
 RDEPEND="media-libs/alsa-lib
 		virtual/opencl
-		x11-libs/qwt"
+		x11-libs/qwt[qt5]"
 DEPEND="${RDEPEND}
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5
