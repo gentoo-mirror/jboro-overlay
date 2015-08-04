@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit eutils fcaps cmake-utils git-2
+inherit eutils cmake-utils git-2
 
 DESCRIPTION="PCM DFT Viewer"
 HOMEPAGE="https://github.com/JBoro/pcmdft"
