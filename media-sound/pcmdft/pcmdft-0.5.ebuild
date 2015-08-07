@@ -8,7 +8,7 @@ inherit eutils cmake-utils
 
 DESCRIPTION="PCM DFT Viewer"
 HOMEPAGE="https://github.com/JBoro/pcmdft"
-SRC_URI="https://github.com/JBoro/pcmdft/archive/${PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/JBoro/pcmdft/archive/${PV}.tar.gz"
 
 LICENSE="GPL"
 SLOT="0"
