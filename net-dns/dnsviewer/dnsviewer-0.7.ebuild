@@ -4,13 +4,11 @@
 
 EAPI=5
 
-inherit eutils fcaps cmake-utils git-2
+inherit eutils fcaps cmake-utils
 
 DESCRIPTION="Quick Easy DNS viewer"
 HOMEPAGE="https://github.com/JBoro/dns_viewer"
-SRC_URI=""
-EGIT_REPO_URI="https://github.com/JBoro/dns_viewer.git"
-EGIT_COMMIT="02d673914fd82eec7ee487602d550d60db185dd4"
+SRC_URI="https://github.com/JBoro/dns_viewer/archive/${PN}-${PV}.tar.gz"
 
 LICENSE="ISC"
 SLOT="0"

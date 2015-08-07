@@ -4,13 +4,11 @@
 
 EAPI=5
 
-inherit eutils cmake-utils git-2
+inherit eutils cmake-utils
 
 DESCRIPTION="PCM DFT Viewer"
 HOMEPAGE="https://github.com/JBoro/pcmdft"
-SRC_URI=""
-EGIT_REPO_URI="https://github.com/JBoro/pcmdft.git"
-EGIT_COMMIT=""
+SRC_URI="https://github.com/JBoro/pcmdft/archive/${PN}-${PV}.tar.gz"
 
 LICENSE="GPL"
 SLOT="0"
