@@ -7,8 +7,8 @@ EAPI=5
 inherit eutils fcaps cmake-utils
 
 DESCRIPTION="Quick Easy DNS viewer"
-HOMEPAGE="https://github.com/JBoro/dns_viewer"
-SRC_URI="https://github.com/JBoro/dns_viewer/archive/${PN}-${PV}.tar.gz"
+HOMEPAGE="https://github.com/JBoro/dnsviewer"
+SRC_URI="https://github.com/JBoro/dnsviewer/archive/${PV}.tar.gz"
 
 LICENSE="ISC"
 SLOT="0"
