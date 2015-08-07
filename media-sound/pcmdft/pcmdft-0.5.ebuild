@@ -24,7 +24,8 @@ DEPEND="${RDEPEND}
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5
 		dev-qt/qtwidgets:5
-        x11-misc/xdg-utils"
+        x11-misc/xdg-utils
+		dev-libs/boost"
 
 CMAKE_USE_DIR="${S}/src"
 
