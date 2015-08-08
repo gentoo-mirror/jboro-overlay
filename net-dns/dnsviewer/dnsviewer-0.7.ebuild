@@ -13,7 +13,7 @@ SRC_URI="https://github.com/JBoro/${PN}/archive/${PV}.tar.gz"
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="qt4 qt5"
 REQUIRED_USE="|| ( qt4 qt5 )"
 
 RDEPEND="net-libs/libpcap"
