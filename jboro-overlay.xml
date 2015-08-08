@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+<repo quality="experimental">
+    <name>jboro</name>
+    <description>personal experimental ebuilds</description>
+    <homepage>https://github.com/JBoro/portage</homepage>
+    <owner>
+        <email>justin.borodinsky@gmail.com</email>
+        <name>justin borodinsky</name>
+    </owner>
+    <source type="git">https://github.com/JBoro/portage.git</source>
+</repo>
+</repositories>
