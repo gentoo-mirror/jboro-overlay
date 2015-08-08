@@ -2,7 +2,7 @@
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
 <repo quality="experimental">
-    <name>jboro</name>
+    <name>jboro-overlay</name>
     <description>personal experimental ebuilds</description>
     <homepage>https://github.com/JBoro/portage</homepage>
     <owner>
