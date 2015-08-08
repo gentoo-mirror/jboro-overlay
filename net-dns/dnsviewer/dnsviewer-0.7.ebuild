@@ -7,13 +7,14 @@ EAPI=5
 inherit eutils fcaps cmake-utils
 
 DESCRIPTION="Quick Easy DNS viewer"
-HOMEPAGE="https://github.com/JBoro/dnsviewer"
-SRC_URI="https://github.com/JBoro/dnsviewer/archive/${PV}.tar.gz"
+HOMEPAGE="https://github.com/JBoro/${PN}"
+SRC_URI="https://github.com/JBoro/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="qt4 qt5"
+IUSE=""
+REQUIRED_USE="|| ( qt4 qt5 )"
 
 RDEPEND="net-libs/libpcap"
 DEPEND="${RDEPEND}
@@ -26,17 +27,18 @@ DEPEND="${RDEPEND}
 			dev-qt/qtgui:5
 			dev-qt/qtwidgets:5
         )
-        x11-misc/xdg-utils"
+		x11-misc/xdg-utils"
 
 CMAKE_USE_DIR="${S}/src"
 
+
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_use_find_package qt5 Qt5Widgets)
-		$(cmake-utils_use_find_package qt5 Qt5Gui)
-		$(cmake-utils_use_find_package qt5 Qt5Core)
-		)
-		cmake-utils_src_configure
+			$(cmake-utils_use_find_package qt5 Qt5Widgets)
+			$(cmake-utils_use_find_package qt5 Qt5Gui)
+			$(cmake-utils_use_find_package qt5 Qt5Core)
+			)
+	cmake-utils_src_configure
 }
 
 src_compile() {

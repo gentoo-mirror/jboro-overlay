@@ -7,8 +7,8 @@ EAPI=5
 inherit eutils cmake-utils
 
 DESCRIPTION="PCM DFT Viewer"
-HOMEPAGE="https://github.com/JBoro/pcmdft"
-SRC_URI="https://github.com/JBoro/pcmdft/archive/${PV}.tar.gz"
+HOMEPAGE="https://github.com/JBoro/${PN}"
+SRC_URI="https://github.com/JBoro/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="GPL"
 SLOT="0"
@@ -22,7 +22,7 @@ DEPEND="${RDEPEND}
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5
 		dev-qt/qtwidgets:5
-        x11-misc/xdg-utils
+		x11-misc/xdg-utils
 		dev-libs/boost"
 
 CMAKE_USE_DIR="${S}/src"
